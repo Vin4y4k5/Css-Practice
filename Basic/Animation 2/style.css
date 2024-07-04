@@ -1,0 +1,141 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
+#box{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#box2{
+  margin-top: 120px;
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+#box3{
+  margin-top: 240px;
+  height: 100px;
+  width: 100px;
+  background-color: tomato;
+  animation-name: box3;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+#box4{
+  margin-top: 360px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  animation-name: box4;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+@keyframes move{
+  from{
+    left: 0;
+    background-color: red;
+  }
+  to{
+    left: 70%;
+    background-color: blue;
+  }
+}
+
+@keyframes rotate{
+  from{
+    left: 0;
+    background-color: orange;
+    rotate: 0deg;
+  }
+  to{
+    left: 70%;
+    background-color: blueviolet;
+    rotate: 360deg;
+  }
+}
+
+@keyframes box3{
+  from{
+    top: 0;
+    left: 0;
+    background-color: tomato;
+    rotate: 0deg;
+  }
+  to{
+    top: 50%;
+    left: 70%;
+    background-color: magenta;
+    rotate: 360deg;
+  }
+}
+
+@keyframes box4{
+  0%{
+    top: 0;
+    left: 0;
+    background-color: green;
+  }
+
+  50%{
+    top: 0;
+    left: 70%;
+    rotate: 0deg;
+  }
+
+  100%{
+    top: 13%;
+    left: 70%;
+    rotate: 90deg;
+    background-color: crimson;
+  }
+
+}
+
